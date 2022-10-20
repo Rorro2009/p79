@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Pizzeria del Perrito
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="menu">
+            <a class="active" href="#">Pizzeria</a>
+            <div class="menu-derecho">
+                <a href="#Menu">Ver Menu</a>
+                <a href="#Ingredientes">Añadir tu Pizza</a>
+            </div>
+        </div>
+        <div class="row" id="Menu">
+            <div class="img">
+                <img class="img-responsive" src="pizza.png">
+            </div>
+            <div class="menu-div">
+                <button id="menu-list" onclick="Display()">Ver Menu</button>
+                <div class="desplegar-menu"></div>
+            </div>
+        </div>
+        <div class="newRow" id="Ingredientes">
+            <div class="block1">
+                <input id="añadir" placeholder="Escribe tu Nueva Pizza">
+                <button class= "btn btn-success" onclick="add_top()">Añadir Pizza</button><br><br>
+                <button id="add_toppings" onclick="add_item()">Ver Pizza</button>
+            </div>
+            
+            <div class="block2">
+                <div id="desplegar_addedmenu">
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <img class="img-responsive" src="topping.png">
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
